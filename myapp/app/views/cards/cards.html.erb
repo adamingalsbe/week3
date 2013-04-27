@@ -1,0 +1,11 @@
+<h1><i>"Play the cards you're dealt"</i></h1>
+<h2>- Abraham Lincoln </h2>
+
+<br>
+<a href="http://localhost:3000/poker">Refresh this page to deal a new hand.</a>
+
+<div class='row'>
+  <%= @hand.each do |c| %>
+  <img src = app/assets/images/cards/<% c %>.png>
+  <% end %>
+</div>
